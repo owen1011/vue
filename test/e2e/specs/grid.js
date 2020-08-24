@@ -3,7 +3,7 @@ module.exports = {
     const columns = ['name', 'power']
 
     browser
-    .url('http://localhost:8080/examples/grid/')
+    .url('http://localhost:8080/examples/grid/index.html')
       .waitForElementVisible('table', 1000)
       .assert.count('th', 2)
       .assert.count('th.active', 0)

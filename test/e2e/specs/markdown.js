@@ -1,7 +1,7 @@
 module.exports = {
   'markdown': function (browser) {
     browser
-    .url('http://localhost:8080/examples/markdown/')
+    .url('http://localhost:8080/examples/markdown/index.html')
       .waitForElementVisible('#editor', 1000)
       .assert.value('textarea', '# hello')
       .assert.hasHTML('#editor div', '<h1 id="hello">hello</h1>')

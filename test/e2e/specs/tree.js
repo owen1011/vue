@@ -1,7 +1,7 @@
 module.exports = {
   'tree': function (browser) {
     browser
-    .url('http://localhost:8080/examples/tree/')
+    .url('http://localhost:8080/examples/tree/index.html')
       .waitForElementVisible('li', 1000)
       .assert.count('.item', 12)
       .assert.count('.add', 4)

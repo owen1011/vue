@@ -1,7 +1,7 @@
 module.exports = {
   'todomvc': function (browser) {
     browser
-    .url('http://localhost:8080/examples/todomvc/#test')
+    .url('http://localhost:8080/examples/todomvc/index.html#test')
       .waitForElementVisible('.todoapp', 1000)
       .assert.notVisible('.main')
       .assert.notVisible('.footer')
@@ -91,13 +91,13 @@ module.exports = {
       .assert.count('.todo.completed', 2)
 
     // filter on page load
-    browser.url('http://localhost:8080/examples/todomvc/#active')
+    browser.url('http://localhost:8080/examples/todomvc/index.html#active')
       .assert.count('.todo', 2)
       .assert.count('.todo.completed', 0)
       .assert.containsText('.todo-count strong', '2')
 
     // completed on page load
-    browser.url('http://localhost:8080/examples/todomvc/#completed')
+    browser.url('http://localhost:8080/examples/todomvc/index.html#completed')
       .assert.count('.todo', 2)
       .assert.count('.todo.completed', 2)
       .assert.containsText('.todo-count strong', '2')

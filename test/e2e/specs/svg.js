@@ -2,7 +2,7 @@
 module.exports = {
   'svg': function (browser) {
     browser
-    .url('http://localhost:8080/examples/svg/')
+    .url('http://localhost:8080/examples/svg/index.html')
       .waitForElementVisible('svg', 1000)
       .assert.count('g', 1)
       .assert.count('polygon', 1)

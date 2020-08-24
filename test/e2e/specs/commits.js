@@ -1,7 +1,7 @@
 module.exports = {
   'commits': function (browser) {
     browser
-    .url('http://localhost:8080/examples/commits/')
+    .url('http://localhost:8080/examples/commits/index.html')
       .waitForElementVisible('li', 5000)
       .assert.count('input', 2)
       .assert.count('label', 2)
